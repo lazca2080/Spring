@@ -31,6 +31,6 @@ public class User5DAO {
 	}
 	
 	public void deleteUser5(String uid) {
-		mybatis.delete("uset5.deleteUser5", uid);
+		mybatis.delete("user5.deleteUser5", uid);
 	}
 }

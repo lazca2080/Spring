@@ -8,7 +8,7 @@
 	<body>
 		<h3>user2 수정</h3>
 		<a href="/Ch05">Ch05 메인</a>
-		<a href="/Ch05/user2/list">user1 목록</a>
+		<a href="/Ch05/user2/list">user2 목록</a>
 		
 		<form action="/Ch05/user2/modify" method="post">
 		<table border="1">

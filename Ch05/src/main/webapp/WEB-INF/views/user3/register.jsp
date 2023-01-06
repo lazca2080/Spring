@@ -3,12 +3,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>user3::List</title>
+		<title>user3::Register</title>
 	</head>
 	<body>
 		<h3>user3 등록</h3>
 		<a href="/Ch05">Ch05 메인</a>
-		<a href="/Ch05/user3/list">user1 목록</a>
+		<a href="/Ch05/user3/list">user3 목록</a>
 		
 		<form action="/Ch05/user3/register" method="post">
 		<table border="1">

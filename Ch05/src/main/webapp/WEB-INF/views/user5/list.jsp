@@ -28,7 +28,14 @@
 				<td>${user.uid}</td>
 				<td>${user.name}</td>
 				<td>${user.birth}</td>
-				<td>${user.gender}</td>
+				<c:choose>
+				<c:when test="${user.gender ==1}">
+				<td>남</td>
+				</c:when>
+				<c:otherwise>
+				<td>여</td>
+				</c:otherwise>
+				</c:choose>
 				<td>${user.age}</td>
 				<td>${user.addr}</td>
 				<td>${user.hp}</td>

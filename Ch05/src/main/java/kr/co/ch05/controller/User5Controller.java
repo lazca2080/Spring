@@ -48,7 +48,7 @@ public class User5Controller {
 		return "redirect:/user5/list";
 	}
 	
-	@PostMapping("/user5/delete")
+	@GetMapping("/user5/delete")
 	public String delete(String uid) {
 		service.deleteUser5(uid);
 		return "redirect:/user5/list";

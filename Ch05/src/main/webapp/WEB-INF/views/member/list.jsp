@@ -4,43 +4,34 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>user6::List</title>
+		<title>member::List</title>
 	</head>
 	<body>
-		<h3>user6 목록</h3>
+		<h3>member 목록</h3>
 		<a href="/Ch05">Ch06 메인</a>
-		<a href="/Ch05/user6/register">user6 등록</a>
+		<a href="/Ch05/member/register">member 등록</a>
 		
 		<table border="1">
 			<tr>
 				<th>아이디</th>
 				<th>이름</th>
-				<th>가입날짜</th>
-				<th>성별</th>
-				<th>나이</th>
-				<th>주소</th>
 				<th>휴대폰</th>
+				<th>직급</th>
+				<th>사무실</th>
+				<th>입사날짜</th>
 				<th>관리</th>
 			</tr>
 			<c:forEach var="user" items="${users}">
 			<tr>
 				<td>${user.uid}</td>
 				<td>${user.name}</td>
-				<td>${user.date}</td>
-				<c:choose>
-				<c:when test="${user.gender ==1}">
-				<td>남</td>				
-				</c:when>
-				<c:otherwise>
-				<td>여</td>
-				</c:otherwise>
-				</c:choose>
-				<td>${user.age}</td>
-				<td>${user.address}</td>
 				<td>${user.hp}</td>
+				<td>${user.pos}</td>
+				<td>${user.dep}</td>
+				<td>${user.rdate}</td>
 				<td>
-					<a href="/Ch05/user6/modify?uid=${user.uid}">수정</a>
-					<a href="/Ch05/user6/delete?uid=${user.uid}">삭제</a>
+					<a href="/Ch05/member/modify?uid=${user.uid}">수정</a>
+					<a href="/Ch05/member/delete?uid=${user.uid}">삭제</a>
 				</td>
 			</tr>
 			</c:forEach>
